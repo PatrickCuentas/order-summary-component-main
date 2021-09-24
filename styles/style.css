@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #e0e8ff;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+/** Global **/
+h2 {
+  margin-top: 1.5rem;
+  font-weight: 900;
+}
+
+span {
+  color: #7280a7;
+}
+
+/*************CONTAINER HERE*******************/
+.container {
+  width: 400px;
+}
+
+/************HEADER HERE *****************/
+header {
+  margin-bottom: -5px;
+}
+
+header img {
+  max-width: 100%;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+
+/***********MAIN HERE**********************/
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  padding-bottom: 2rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  /**Flex container start**/
+  /**Flex-container end**/
+}
+
+main .texto-principal {
+  padding: 1.5rem 2rem;
+  line-height: 1.6;
+}
+
+main .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #f5f7ff;
+  border-radius: 15px;
+  width: 80%;
+  padding: 1rem;
+}
+
+main .flex-container .change-text {
+  color: #3829e0;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+main .flex-container .change-text:hover {
+  color: #9061ff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main .flex-container .content {
+  margin-right: 1.5rem;
+  line-height: 1.4;
+}
+
+main .boton-pago {
+  cursor: pointer;
+  margin: 1.6rem 0;
+  padding: 1rem 0.4rem;
+  width: 80%;
+  background-color: #3829e0;
+  border-radius: 15px;
+}
+
+main .boton-pago:hover {
+  background-color: #9061ff;
+  cursor: pointer;
+}
+
+main .boton-pago span {
+  color: white;
+  font-weight: 700;
+}
+
+main .cancelar-pago span {
+  font-weight: 700;
+}
+
+main .cancelar-pago span:hover {
+  color: #1f2f56;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

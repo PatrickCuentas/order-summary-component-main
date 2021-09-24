@@ -1,0 +1,104 @@
+@import "./variables";
+@import "./functions";
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+}
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  @include FlexCenter(row, $paleBlue);
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/** Global **/
+h2 {
+  margin-top: 1.5rem;
+  font-weight: 900;
+}
+span {
+  color: $desaturatedBlue;
+}
+/*************CONTAINER HERE*******************/
+.container {
+  width: 400px;
+}
+
+/************HEADER HERE *****************/
+header {
+  margin-bottom: -5px;
+  img {
+    max-width: 100%;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+  }
+}
+/***********MAIN HERE**********************/
+main {
+  @include FlexCenter(column, $white);
+  padding-bottom: 2rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  .texto-principal {
+    padding: 1.5rem 2rem;
+    line-height: 1.6;
+  }
+  /**Flex container start**/
+  .flex-container {
+    @include FlexBetween(row, $veryPaleBlue);
+    border-radius: 15px;
+    width: 80%;
+    padding: 1rem;
+    .change-text {
+      color: $brightBlue;
+      font-weight: 700;
+      text-decoration: underline;
+      &:hover {
+        color: $brightShadowBlue;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+    .content {
+      margin-right: 1.5rem;
+      line-height: 1.4;
+    }
+  } /**Flex-container end**/
+
+  .boton-pago {
+    cursor: pointer;
+    margin: 1.6rem 0;
+    padding: 1rem 0.4rem;
+    width: 80%;
+    background-color: $brightBlue;
+    border-radius: 15px;
+    &:hover {
+      background-color: $brightShadowBlue;
+      cursor: pointer;
+    }
+    span {
+      color: $white;
+      font-weight: 700;
+    }
+  }
+  .cancelar-pago {
+    span {
+      font-weight: 700;
+      &:hover {
+        color: $darkBlue;
+        cursor: pointer;
+      }
+    }
+  }
+}
